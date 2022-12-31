@@ -4,18 +4,21 @@ function burgerMenu(){
     let menu = document.querySelector('.menu')
     const body = document.querySelector('body')
     const btns = document.querySelector('.navbar__btns')
+    const html = document.querySelector('html')
     burger.addEventListener('click', () =>{
         if (!menu.classList.contains('active')) {
             menu.classList.add('active')
             burger.classList.add('active-burger')
             body.classList.add('locked')
             btns.classList.add('active')
+            html.classList.add('active')
         }
         else {
             menu.classList.remove('active')
             burger.classList.remove('active-burger')
             body.classList.remove('locked')
             btns.classList.remove('active')
+            html.classList.remove('active')
         }
     })
 
@@ -26,6 +29,7 @@ function burgerMenu(){
             burger.classList.remove('active-burger')
             body.classList.remove('locked')
             btns.classList.remove('active')
+            html.classList.remove('active')
         }
     })
 
